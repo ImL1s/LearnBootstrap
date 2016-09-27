@@ -1,0 +1,121 @@
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <style>
+        .row {
+            margin-bottom: 20px;
+        }
+        
+        .row .row {
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+        
+        /*所有class中包含"col-"的標籤*/
+        [class*="col-"] {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background-color: #eee;
+            background-color: rgba(86, 61, 124, .15);
+            border: 1px solid #ddd;
+            border: 1px solid rgba(86, 61, 124, .2);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+    <!--設定為xs&sm&md&lg的div標籤，必須在達到對應的解析度才會有效果-->
+    <label for=""><mark>設定為xs&sm&md&lg的div標籤，必須在達到對應的解析度才會有效果</mark></label>
+        <div class="row">
+            <!--<div class="col-xs-6">col-xs-6</div>
+                <div class="col-xs-6">col-xs-6</div>
+                <div class="col-xs-1">col-xs-1</div>
+                <div class="col-xs-1">col-xs-1</div>-->
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <!--<div class="col-md-1">col-md-1</div>-->
+        </div>
+
+        <hr>
+
+        <!--佔了三行的col-->
+        <label for=""><mark>佔了三行的col</mark></label>
+        <div class="row">
+            <div class="col-md-3">col-md-3</div>
+            <div class="col-md-3">col-md-3</div>
+            <div class="col-md-3">col-md-3</div>
+        </div>
+
+        <hr>
+
+        <!--如果一列的內容過多，那麼該除儲存格的內容將會自動往下延伸-->
+        <label for=""><mark>如果一列的內容過多，那麼該除儲存格的內容將會自動往下延伸</mark></label>
+        <div class="row">
+            <div class="col-md-3">col-md-3col-md-3col-md-3col-md-3col-md-3col-md-3col-md-3</div>
+            <div class="col-md-3">col-md-3</div>
+            <div class="col-md-3">col-md-3</div>
+        </div>
+
+        <hr>
+
+        <!--偏移儲存格-->
+        <label for=""><mark>偏移儲存格</mark></label>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-1">col-md-3col-md-3col-md-3col-md-3col-md-3col-md-3col-md-3</div>
+        </div>
+
+        <hr>
+
+        <!--鑲嵌-->
+        <label for=""><mark>鑲嵌</mark></label>
+        <div class="row">
+            <div class="col-sm-9">
+                one
+                <div class="row">
+                    <div class="col-xs-8">
+                        first
+                    </div>
+                    <div class="col-xs-4">
+                        second
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!--更改GridSystem col的位置-->
+        <label for=""><mark>更改GridSystem col的位置</mark></label>
+        <div class="row">
+            
+            <div class="col-md-9">col-md-9</div>
+            
+            <div class="col-md-3">col-md-3</div>
+        </div>
+
+        <div class="row">
+            <!--將該div從GridSystem中往後推3格-->
+            <div class="col-md-9 col-md-push-3">col-md-9</div>
+            <!--將該div在GridSystem中往前拉９格-->
+            <div class="col-md-3 col-md-pull-9">col-md-3</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
